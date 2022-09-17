@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         for (tipe in simvols) {          //цикл добавления значений в коллекцию
             numberList.add(tipe)
         }
-        print(numberList)  //проверка результата содержимого коллекции
+        
 
         Disp()   //  функия для вывода информации на экран
 
@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun Disp(){              //   Функция для вывода информации на экран
+        print(numberList)  //проверка результата содержимого коллекции
         tvText = findViewById(R.id.TvText)
         tvText?.setText(numberList.toString())   //вывод содержимого коллекции на экран смартфона
 
